@@ -1905,6 +1905,7 @@ header .sub-head h2 a{
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 			font-size: 3em;
 			letter-spacing: 13px;
+			margin-left: 14px;
 		}
 
 			#header h1 a {
@@ -2590,8 +2591,9 @@ header .sub-head h2 a{
 			.button {
 				letter-spacing: 2px;
 				display: block;
-				padding: 1em 0 1em 0;
+				padding: 1em 2em;
 				width: 100%;
+				font-size: .8em
 			}
 
 		/* Actions */

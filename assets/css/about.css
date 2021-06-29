@@ -1514,7 +1514,7 @@ input, select, textarea {
 			display: block;
 			width: 70%;
 			/* height: 100%; */
-			margin: 0 0 3.5em 0;
+			margin: 0 auto;
 		}
 
 		.image.left {
@@ -1933,6 +1933,7 @@ header .sub-head h2 a{
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 			font-size: 3em;
 			letter-spacing: 13px;
+			margin-left: 14px;
 		}
 
 			#header h1 a {
@@ -2279,6 +2280,16 @@ header .sub-head h2 a{
 				font-size: 13pt;
 			}
 
+		/* Main */
+
+			.box.post {
+				text-align: center;
+			}
+
+			.box.post .image-p {
+				text-align: center;
+			}
+
 	}
 
 /* Large */
@@ -2345,6 +2356,9 @@ header .sub-head h2 a{
 
 			#main {
 				padding: 4em 0;
+			}
+			#main .container .row .col-12 #content .box.post .image img {
+				text-align: center;
 			}
 
 		/* Footer */
@@ -2598,7 +2612,7 @@ header .sub-head h2 a{
 		/* Image */
 
 			.image.featured {
-				margin: 0 0 1.5em 0;
+				margin: 0 auto;
 			}
 
 			.image.left {
@@ -2618,8 +2632,9 @@ header .sub-head h2 a{
 			.button {
 				letter-spacing: 2px;
 				display: block;
-				padding: 1em 0 1em 0;
+				padding: 1em 2em;
 				width: 100%;
+				font-size: .8em
 			}
 
 		/* Actions */

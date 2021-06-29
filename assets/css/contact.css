@@ -121,7 +121,7 @@ input, select, textarea {
 		font-size: 1.65em;
 		font-weight: 400;
 		letter-spacing: 4px;
-		margin: -1.5em 0 3em 0;
+		margin: -1.5em 0 0em 5px;
 		line-height: 1.75em;
         text-align: center;
 	}
@@ -679,7 +679,7 @@ input, select, textarea {
 						}
                 /* Move the form with Google Map left and right */
 				.row {
-					margin-top: -50px;
+					margin-top: 0px;
 					margin-left: -50px;
 				}
 
@@ -929,7 +929,7 @@ input, select, textarea {
 				}
 
 					.row > * {
-						padding: 40px 0 0 40px;
+						padding: 40px 0 0 0px;
 					}
 
 					.row.gtr-uniform {
@@ -1934,6 +1934,7 @@ header .sub-head h2 a{
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 			font-size: 3em;
 			letter-spacing: 13px;
+			margin-left: 14px;
 		}
 
 			#header h1 a {
@@ -2319,12 +2320,13 @@ header .sub-head h2 a{
 		/* Header */
 
 			#header > .container {
-				padding: 12em 0 5em 0;
+				padding: 7em 0 0em 0;
 			}
 
 			#header h1 {
 				font-size: 2.5em;
 			}
+
 
 		/* Nav */
 
@@ -2357,6 +2359,45 @@ header .sub-head h2 a{
 			#main {
 				padding: 4em 0;
 			}
+			
+			.row {
+				margin: 0 auto;
+			}
+
+			.row.top {
+				margin: 0 auto;
+			}
+
+			.row.top .col-6 {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.row.bottom {
+				display: flex;
+				flex-direction: column;
+				margin: 0 auto;
+			} 
+
+			.row.bottom .col-6 .gmap {
+				order: 2;
+			}
+
+			.row.bottom .col-6 .c-form {
+				order: 1;
+			}
+
+			.row.bottom .col-6 {
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			#main .container .row #content .contact-form .row .col-6 .map .google-map {
+				padding: 0;
+				width: 35rem;
+			}
 
 		/* Footer */
 
@@ -2372,6 +2413,22 @@ header .sub-head h2 a{
 			}
 
 	}
+	@media screen and (max-width: 1200px) {
+		#main .container .row #content .contact-form .row .col-6 .map .google-map {
+			width: 33rem;
+		}
+	}
+	@media screen and (max-width: 1150px) {
+		#main .container .row #content .contact-form .row .col-6 .map .google-map {
+			width: 30rem;
+		}
+	}
+	@media screen and (max-width: 1070px) {
+		#main .container .row #content .contact-form .row .col-6 .map .google-map {
+			width: 28rem;
+		}
+	}
+
 
 /* Medium */
 
@@ -2390,7 +2447,7 @@ header .sub-head h2 a{
 		/* Header */
 
 			#header > .container {
-				padding: 10em 0 7em 0;
+				padding: 0em 0 0em 0;
 			}
 
 		/* Nav */
@@ -2653,7 +2710,7 @@ header .sub-head h2 a{
 		/* Header */
 
 			#header > .container {
-				padding: 6em 0 4em 0;
+				padding: 0em 0 0em 0;
 			}
 
 			#header h1 {
@@ -2744,4 +2801,10 @@ header .sub-head h2 a{
 					border-left: 0;
 				}
 
+	}
+
+	@media screen and (max-width: 570px) {
+		#main .container .row #content .contact-form .row .col-6 .map .google-map {
+			width: 23rem;
+		}
 	}

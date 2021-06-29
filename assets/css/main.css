@@ -1933,6 +1933,7 @@ header .sub-head h2 a{
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 			font-size: 3em;
 			letter-spacing: 13px;
+			margin-left: 14px;
 		}
 
 			#header h1 a {
@@ -2336,15 +2337,35 @@ header .sub-head h2 a{
 				#banner > .container {
 					padding: 0 4em;
 				}
+				#banner p {
+					font-size: 1.6em;
+					letter-spacing: 5px;
+				}
 
-					#banner > .container br {
+					/* #banner > .container br {
 						display: none;
-					}
+					} */
 
 		/* Main */
 
 			#main {
 				padding: 4em 0;
+			}
+
+			#main #content > section:first-child, #content > article:first-child {
+				text-align: center;
+			}
+			.image.featured {
+				margin: 0 auto;
+			}
+			p {
+				margin: 2em 0;
+			}
+			#content > section, #content > article {
+				text-align: center;
+			}
+			#content .box.post h3 {
+				margin-top: 1em;
 			}
 
 		/* Footer */
@@ -2572,9 +2593,21 @@ header .sub-head h2 a{
 				padding-top: 6em;
 			}
 
+		/* Banner */
+
+		#banner p {
+			font-size: 1.4em;
+			letter-spacing: 5px;
+		}
+
 	}
 
 /* Small */
+	@media screen and (max-width: 780px) {
+		#header h1 {
+			font-size: 2em;
+		}
+	}
 
 	@media screen and (max-width: 736px) {
 
@@ -2618,8 +2651,9 @@ header .sub-head h2 a{
 			.button {
 				letter-spacing: 2px;
 				display: block;
-				padding: 1em 0 1em 0;
+				padding: 1em 2em;
 				width: 100%;
+				font-size: .8em
 			}
 
 		/* Actions */
@@ -2689,15 +2723,28 @@ header .sub-head h2 a{
 			#main {
 				padding: 2em 0;
 			}
-
-		/* Content */
-
+			#main #content > section:first-child, #content > article:first-child {
+				text-align: center;
+			}
+			.image.featured {
+				margin: 0 auto;
+			}
+			
+			/* Content */
+			
 			#content > section,
 			#content > article {
 				margin: 3em 0 0 0;
 				padding: 3em 0 0 0;
+				text-align: center;
 			}
-
+			#content .box.post h3 {
+				margin-top: 1em;
+			}
+			p {
+				margin: 2em 0;
+			}
+			
 		/* Sidebar */
 
 			#sidebar {

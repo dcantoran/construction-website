@@ -1932,6 +1932,7 @@ header .sub-head h2 a{
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 			font-size: 3em;
 			letter-spacing: 13px;
+			margin-left: 14px;
 		}
 
 			#header h1 a {
@@ -2610,6 +2611,13 @@ header .sub-head h2 a{
 			#sidebar {
 				padding-top: 6em;
 			}
+		/* Main */
+
+		#main .container-gallery #content-gallery .row .column {
+    		flex: 50%;
+    		padding: 15px;
+    		width: 100%;
+		}
 
 	}
 
@@ -2627,7 +2635,7 @@ header .sub-head h2 a{
 				font-size: 1.2em;
 				letter-spacing: 2px;
 				text-align: center;
-				margin: 0 0 1em 0;
+				margin: 0 0 2.5em 0;
 			}
 
 				h2 br, h3 br, h4 br, h5 br, h6 br {
@@ -2657,8 +2665,9 @@ header .sub-head h2 a{
 			.button {
 				letter-spacing: 2px;
 				display: block;
-				padding: 1em 0 1em 0;
+				padding: 1em 2em;
 				width: 100%;
+				font-size: .8em
 			}
 
 		/* Actions */
@@ -2727,6 +2736,12 @@ header .sub-head h2 a{
 
 			#main {
 				padding: 2em 0;
+			}
+
+			#main .container-gallery #content-gallery .row .column {
+				flex: 100%;
+				padding: 0px;
+				width: 100%;
 			}
 
 		/* Content */
